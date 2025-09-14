@@ -101,7 +101,7 @@ Click on any image to view it in full size.
   <tr>
     <td><img src="Plotly_Figure-Friday/images/ff_28.png" width="100%"></td>
     <td><img src="Plotly_Figure-Friday/images/ff_29.png" width="100%"></td>
-    <td><img src="" width="100%"></td>        
+    <td><img src="Plotly_Figure-Friday/images/ff_30.png" width="100%"></td>        
   </tr>
 </table>
 

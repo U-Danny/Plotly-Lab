@@ -466,14 +466,21 @@ def update_ui(current_viz_data, switch_value, page_style):
         [
             dcc.Graph(
                 figure=fig,
-                config=config,
-                style={"min-height": "500px", "height": "100%", "width": "100%"},
+                config={"displayModeBar": False},
+                style={
+                    # El componente ocupa todo el ancho del div padre
+                    "width": "100%",
+                    "height": "100%",
+                },
             )
         ],
-        className="flex-grow-1 d-flex overflow-auto p-2",
-        style={"min-height": "500px", "height": "100%", "width": "100%"},
+        # El div padre se encarga de centrar el contenido
+        className="d-flex justify-content-center",
+        style={
+            "width": "100%",
+            "height": "100%",
+        },
     )
-
     max_index = len(plots) - 1
     active_prev = plot_index == 0
     active_next = plot_index == max_index
